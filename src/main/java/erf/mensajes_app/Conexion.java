@@ -14,10 +14,10 @@ public class Conexion {
         try{ 
             conection = DriverManager.getConnection("jdbc:mysql://localhost:3306/rwitter","root","laconchadelalora999999");
                 if(conection != null){
-                    System.out.println("Conexion exitosa");
+                    System.out.println("Servidor: conexion OK.");
                 }
         } catch(SQLException e) {
-            System.out.println(e + "WTF?");
+            System.out.println("Servidor: " + e );
         }
         return conection;
 }
