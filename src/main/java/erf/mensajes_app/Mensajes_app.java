@@ -1,10 +1,8 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- */
 
 package erf.mensajes_app;
 
 import java.sql.Connection;
+import java.sql.SQLException;
 import java.util.Scanner;
 
 /**
@@ -13,7 +11,7 @@ import java.util.Scanner;
  */
 public class Mensajes_app {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws SQLException {
         System.out.println("App Rwitter app v1.0");
         System.out.println("Conectando con el servidor...");
         
@@ -44,14 +42,5 @@ public class Mensajes_app {
             
             
         }while(opcion !=5);
-       
-        
-        /* no utilizaremos la conexion a la DB
-        Conexion conexionmain = new Conexion();
-        try(Connection cnx = conexionmain.get_connection()){
-        }catch(Exception e){
-            System.out.println(e);
-        } 
-        */
     }
 }
